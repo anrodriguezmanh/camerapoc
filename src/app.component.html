@@ -1,0 +1,17 @@
+<style>
+  .control-section{
+      margin-top: 100px;
+  }
+</style>
+
+<div class="col-lg-12 control-section">
+  <div class="e-img-editor-sample">
+    <ejs-imageeditor
+      id="image-editor"
+      (created)="created()"
+      (beforeSave)="setPic($event)"
+    >
+    </ejs-imageeditor>
+  </div>
+</div>
+<input id="camera" #camera type="file" capture="environment" accept="image/*" />
